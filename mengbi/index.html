@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>梦比优斯奥特曼国语-剧集介绍、角色资料与国语观看指南</title>
+<meta name="description" content="梦比优斯奥特曼国语专题页，整理梦比优斯奥特曼的剧集背景、主要角色、形态能力、国语配音观看方式与常见问题，帮助观众快速了解这部经典奥特曼系列作品。">
+<meta name="keywords" content="梦比优斯奥特曼国语,梦比优斯奥特曼,奥特曼国语,梦比优斯剧集,梦比优斯角色">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+  :root{
+    --red:#d8232a;
+    --red-deep:#a3161c;
+    --silver:#e8ecf2;
+    --navy:#131a2b;
+    --navy-soft:#1e2942;
+    --gold:#f2b544;
+    --text:#22283a;
+    --text-light:#5b6579;
+    --line:#e2e6ee;
+    --bg:#f5f7fb;
+    --radius:12px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB","Helvetica Neue",Arial,sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.75;
+    font-size:16px;
+  }
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 20px;}
+
+  /* ---------- 顶栏 ---------- */
+  .topbar{
+    background:var(--navy);
+    color:#c7d0e2;
+    font-size:13px;
+    border-bottom:1px solid rgba(255,255,255,.07);
+  }
+  .topbar .wrap{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    min-height:38px;
+    flex-wrap:wrap;
+    gap:6px;
+  }
+  .topbar span.tag{
+    color:var(--gold);
+    letter-spacing:.5px;
+  }
+
+  /* ---------- 页眉 ---------- */
+  header.site{
+    background:linear-gradient(135deg,#131a2b 0%,#1e2942 55%,#3a1a1e 100%);
+    color:#fff;
+    position:relative;
+    overflow:hidden;
+  }
+  header.site::after{
+    content:"";
+    position:absolute;
+    right:-120px;
+    top:-120px;
+    width:380px;
+    height:380px;
+    background:radial-gradient(circle,rgba(216,35,42,.55),transparent 65%);
+    pointer-events:none;
+  }
+  .header-inner{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:24px;
+    padding:18px 0;
+    position:relative;
+    z-index:2;
+    flex-wrap:wrap;
+  }
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:14px;
+  }
+  .brand .emblem{
+    width:52px;height:52px;
+    border-radius:50%;
+    background:radial-gradient(circle at 32% 28%,#fff 0 18%,var(--red) 55%,var(--red-deep) 100%);
+    box-shadow:0 0 0 3px rgba(255,255,255,.16),0 6px 18px rgba(0,0,0,.4);
+    display:flex;align-items:center;justify-content:center;
+    font-weight:800;color:#fff;font-size:19px;letter-spacing:-1px;
+    flex-shrink:0;
+  }
+  .brand h1{
+    font-size:22px;
+    line-height:1.3;
+    letter-spacing:1px;
+  }
+  .brand h1 small{
+    display:block;
+    font-size:12px;
+    font-weight:400;
+    color:#9fb0cd;
+    letter-spacing:2px;
+    margin-top:3px;
+  }
+  nav.main-nav ul{
+    list-style:none;
+    display:flex;
+    gap:4px;
+    flex-wrap:wrap;
+  }
+  nav.main-nav a{
+    display:block;
+    padding:9px 15px;
+    font-size:15px;
+    border-radius:8px;
+    color:#dbe3f0;
+    transition:.22s;
+  }
+  nav.main-nav a:hover{
+    background:rgba(216,35,42,.75);
+    color:#fff;
+  }
+
+  /* ---------- 首屏 ---------- */
+  .hero{
+    background:linear-gradient(180deg,#1e2942 0%,#28334f 100%);
+    color:#eef2f9;
+    padding:46px 0 52px;
+    position:relative;
+  }
+  .hero-grid{
+    display:grid;
+    grid-template-columns:1.35fr 1fr;
+    gap:38px;
+    align-items:center;
+  }
+  .hero h2{
+    font-size:31px;
+    line-height:1.35;
+    margin-bottom:16px;
+    letter-spacing:.5px;
+  }
+  .hero h2 em{
+    font-style:normal;
+    color:var(--gold);
+  }
+  .hero p.lead{
+    font-size:15.5px;
+    color:#c3cde0;
+    margin-bottom:22px;
+  }
+  .hero-actions{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+  }
+  .btn{
+    display:inline-block;
+    padding:11px 24px;
+    border-radius:30px;
+    font-size:15px;
+    font-weight:600;
+    transition:.22s;
+    border:1px solid transparent;
+  }
+  .btn-primary{
+    background:var(--red);
+    color:#fff;
+    box-shadow:0 6px 18px rgba(216,35,42,.4);
+  }
+  .btn-primary:hover{background:var(--red-deep);transform:translateY(-2px);}
+  .btn-ghost{
+    border-color:rgba(255,255,255,.4);
+    color:#e6ecf7;
+  }
+  .btn-ghost:hover{background:rgba(255,255,255,.12);}
+  .hero-card{
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.14);
+    border-radius:var(--radius);
+    padding:22px 22px 20px;
+    backdrop-filter:blur(3px);
+  }
+  .hero-card h3{
+    font-size:16px;
+    color:var(--gold);
+    margin-bottom:12px;
+    letter-spacing:1px;
+  }
+  .hero-card dl{
+    display:grid;
+    grid-template-columns:auto 1fr;
+    gap:8px 14px;
+    font-size:14px;
+  }
+  .hero-card dt{color:#9fb0cd;white-space:nowrap;}
+  .hero-card dd{color:#e9eefa;}
+
+  /* ---------- 通用区块 ---------- */
+  section.block{
+    padding:52px 0;
+  }
+  section.block.alt{
+    background:#fff;
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+  }
+  .sec-head{
+    margin-bottom:28px;
+  }
+  .sec-head h2{
+    font-size:24px;
+    letter-spacing:.5px;
+    position:relative;
+    padding-left:16px;
+    line-height:1.3;
+  }
+  .sec-head h2::before{
+    content:"";
+    position:absolute;
+    left:0;top:4px;bottom:4px;
+    width:5px;
+    border-radius:3px;
+    background:linear-gradient(180deg,var(--red),var(--gold));
+  }
+  .sec-head p{
+    color:var(--text-light);
+    font-size:14.5px;
+    margin-top:8px;
+    padding-left:16px;
+  }
+
+  /* ---------- 简介正文 ---------- */
+  .intro-grid{
+    display:grid;
+    grid-template-columns:1.6fr 1fr;
+    gap:34px;
+  }
+  .intro-grid article p{
+    margin-bottom:14px;
+    font-size:15.5px;
+    color:#333a4d;
+  }
+  .fact-list{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:20px 22px;
+    height:fit-content;
+  }
+  .fact-list h3{
+    font-size:16px;
+    margin-bottom:14px;
+    color:var(--navy);
+  }
+  .fact-list ul{
+    list-style:none;
+    font-size:14.5px;
+  }
+  .fact-list li{
+    padding:9px 0;
+    border-bottom:1px dashed var(--line);
+    display:flex;
+    gap:10px;
+    color:#3b4358;
+  }
+  .fact-list li:last-child{border-bottom:none;}
+  .fact-list li b{
+    color:var(--red-deep);
+    font-weight:600;
+    flex-shrink:0;
+  }
+
+  /* ---------- 角色卡片 ---------- */
+  .cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(255px,1fr));
+    gap:20px;
+  }
+  .card{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:20px;
+    transition:.25s;
+    position:relative;
+    overflow:hidden;
+  }
+  .card::before{
+    content:"";
+    position:absolute;
+    left:0;top:0;bottom:0;
+    width:4px;
+    background:var(--red);
+    opacity:0;
+    transition:.25s;
+  }
+  .card:hover{
+    box-shadow:0 10px 26px rgba(19,26,43,.1);
+    transform:translateY(-3px);
+  }
+  .card:hover::before{opacity:1;}
+  .card h3{
+    font-size:17px;
+    margin-bottom:6px;
+    color:var(--navy);
+  }
+  .card .role{
+    display:inline-block;
+    font-size:12px;
+    color:#fff;
+    background:var(--navy-soft);
+    border-radius:20px;
+    padding:2px 11px;
+    margin-bottom:10px;
+    letter-spacing:.5px;
+  }
+  .card p{
+    font-size:14.5px;
+    color:var(--text-light);
+  }
+
+  /* ---------- 形态能力 ---------- */
+  .forms{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:18px;
+  }
+  .form-item{
+    background:linear-gradient(160deg,#fff 0%,#f3f6fc 100%);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:22px 20px;
+  }
+  .form-item .badge{
+    width:38px;height:38px;
+    border-radius:10px;
+    background:linear-gradient(135deg,var(--red),var(--gold));
+    color:#fff;
+    display:flex;align-items:center;justify-content:center;
+    font-weight:700;
+    font-size:15px;
+    margin-bottom:12px;
+  }
+  .form-item h3{font-size:16.5px;margin-bottom:8px;color:var(--navy);}
+  .form-item p{font-size:14.5px;color:var(--text-light);}
+
+  /* ---------- 观看指南列表 ---------- */
+  .guide-list{
+    display:grid;
+    gap:16px;
+  }
+  .guide-item{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:20px 22px;
+    display:grid;
+    grid-template-columns:52px 1fr;
+    gap:18px;
+    align-items:start;
+  }
+  .guide-item .num{
+    width:44px;height:44px;
+    border-radius:50%;
+    background:var(--silver);
+    color:var(--red-deep);
+    font-weight:800;
+    display:flex;align-items:center;justify-content:center;
+    font-size:17px;
+  }
+  .guide-item h3{font-size:16.5px;margin-bottom:6px;color:var(--navy);}
+  .guide-item p{font-size:14.5px;color:var(--text-light);}
+
+  /* ---------- FAQ ---------- */
+  .faq{
+    display:grid;
+    gap:12px;
+  }
+  details{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:0 20px;
+    transition:.2s;
+  }
+  details[open]{
+    border-color:#f0c6c8;
+    box-shadow:0 6px 18px rgba(216,35,42,.07);
+  }
+  summary{
+    cursor:pointer;
+    list-style:none;
+    padding:16px 0;
+    font-weight:600;
+    font-size:15.5px;
+    color:var(--navy);
+    position:relative;
+    padding-right:30px;
+  }
+  summary::-webkit-details-marker{display:none;}
+  summary::after{
+    content:"+";
+    position:absolute;
+    right:0;top:14px;
+    font-size:20px;
+    color:var(--red);
+    font-weight:400;
+    transition:.2s;
+  }
+  details[open] summary::after{content:"−";}
+  details p{
+    padding:0 0 18px;
+    font-size:14.5px;
+    color:var(--text-light);
+  }
+
+  /* ---------- 侧栏提示条 ---------- */
+  .notice{
+    background:linear-gradient(120deg,#fff8e8,#fff);
+    border:1px solid #f2dfae;
+    border-left:5px solid var(--gold);
+    border-radius:10px;
+    padding:18px 22px;
+    font-size:14.5px;
+    color:#6b5a2c;
+    margin-top:26px;
+  }
+  .notice b{color:#a3781a;}
+
+  /* ---------- 页脚 ---------- */
+  footer.site{
+    background:var(--navy);
+    color:#93a1bb;
+    padding:40px 0 26px;
+    font-size:14px;
+  }
+  .footer-grid{
+    display:grid;
+    grid-template-columns:1.4fr 1fr 1fr;
+    gap:30px;
+    padding-bottom:26px;
+    border-bottom:1px solid rgba(255,255,255,.09);
+  }
+  footer.site h3{
+    color:#e7edf8;
+    font-size:15.5px;
+    margin-bottom:14px;
+    letter-spacing:.5px;
+  }
+  footer.site p{line-height:1.9;}
+  footer.site ul{list-style:none;}
+  footer.site li{padding:5px 0;}
+  footer.site a:hover{color:var(--gold);}
+  .copyright{
+    text-align:center;
+    padding-top:20px;
+    font-size:13px;
+    color:#6f7d96;
+  }
+
+  /* ---------- 响应式 ---------- */
+  @media (max-width:960px){
+    .hero-grid{grid-template-columns:1fr;gap:28px;}
+    .intro-grid{grid-template-columns:1fr;}
+    .footer-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:680px){
+    body{font-size:15px;}
+    .header-inner{flex-direction:column;align-items:flex-start;gap:14px;}
+    nav.main-nav ul{width:100%;}
+    nav.main-nav a{padding:8px 12px;font-size:14px;}
+    .hero h2{font-size:24px;}
+    .hero{padding:34px 0 40px;}
+    section.block{padding:38px 0;}
+    .sec-head h2{font-size:20px;}
+    .guide-item{grid-template-columns:1fr;gap:10px;}
+    .footer-grid{grid-template-columns:1fr;}
+    .topbar .wrap{justify-content:center;text-align:center;}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span class="tag">奥特曼系列 · 国语专题资料页</span>
+    <span>内容整理自公开作品信息，仅供观众了解与参考</span>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap header-inner">
+    <div class="brand">
+      <div class="emblem">M</div>
+      <h1>梦比优斯奥特曼国语<small>MEBIUS · 资料与观看指南</small></h1>
+    </div>
+    <nav class="main-nav" aria-label="主导航">
+      <ul>
+        <li><a href="#intro">作品简介</a></li>
+        <li><a href="#crew">主要角色</a></li>
+        <li><a href="#forms">形态能力</a></li>
+        <li><a href="#guide">观看指南</a></li>
+        <li><a href="#faq">常见问题</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- 首屏 -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h2>梦比优斯奥特曼国语：<em>从新手队员到守护地球的成长故事</em></h2>
+        <p class="lead">
+          《梦比优斯奥特曼》是奥特曼系列中一部以“成长”和“羁绊”为核心的作品。主角日比野未来以人类姿态加入CREW GUYS，
+          与队友并肩对抗怪兽与宇宙侵略者。本页整理了作品背景、主要角色、形态能力，以及观看国语版本时可以留意的要点，
+          方便第一次接触这部作品或想重温的观众快速上手。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#intro">了解作品背景</a>
+          <a class="btn btn-ghost" href="#guide">查看观看指南</a>
+        </div>
+      </div>
+      <aside class="hero-card" aria-label="作品速览">
+        <h3>作品速览</h3>
+        <dl>
+          <dt>作品类型</dt><dd>特摄 / 科幻 / 英雄成长</dd>
+          <dt>所属系列</dt><dd>奥特曼系列（奥特兄弟世界观延续）</dd>
+          <dt>主角身份</dt><dd>梦比优斯奥特曼 / 日比野未来</dd>
+          <dt>所属组织</dt><dd>CREW GUYS 地球防卫队</dd>
+          <dt>语言版本</dt><dd>日语原声、国语配音等</dd>
+          <dt>适合观众</dt><dd>系列粉丝、初次接触特摄的观众</dd>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 作品简介 -->
+  <section class="block" id="intro">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>作品简介与故事背景</h2>
+        <p>理解梦比优斯为什么值得一看，先从它的世界观和主线说起</p>
+      </div>
+      <div class="intro-grid">
+        <article>
+          <p>
+            《梦比优斯奥特曼》的故事发生在奥特兄弟长期守护地球之后。随着时间推移，地球上对“奥特曼”的记忆逐渐淡去，
+            防卫组织也进入了新的阶段。来自光之国的年轻战士梦比优斯，被派往地球执行任务，并以人类青年“日比野未来”的身份
+            加入地球防卫队 CREW GUYS，与人类队友共同面对新的威胁。
+          </p>
+          <p>
+            与许多以强大战力开场的前辈不同，梦比优斯一开始并不成熟。他会犹豫、会犯错，也会因为不理解人类的情感而困惑。
+            作品的主线正是围绕这种“从稚嫩到可靠”的变化展开：他在一次次战斗中学习什么是责任、什么是伙伴，
+            也逐渐理解人类为什么值得被守护。
+          </p>
+          <p>
+            作品与早期奥特兄弟的世界观存在明显呼应，多位经典奥特战士以不同形式登场，与梦比优斯形成传承关系。
+            对于看过昭和时期奥特曼的观众来说，这种传承感是重要的观感来源；而对于新观众，作品本身的人物关系和成长线
+            也足以独立成立，不依赖前作知识也能看懂。
+          </p>
+          <p>
+            国语版本的意义在于降低观看门槛。特摄作品包含大量战斗台词、战术指令和情感对白，
+            国语配音能让不习惯看字幕的观众更专注于画面和剧情推进，尤其适合与家人一起观看。
+          </p>
+        </article>
+        <aside class="fact-list">
+          <h3>观看前值得知道的几点</h3>
+          <ul>
+            <li><b>成长线</b>主角并非一开始就强大，前期的不成熟是剧情设计的一部分。</li>
+            <li><b>团队戏</b>CREW GUYS 队员各有性格，团队协作是重要看点。</li>
+            <li><b>传承感</b>与奥特兄弟世界观相连，老角色登场是系列粉丝的关注点。</li>
+            <li><b>单元结构</b>多数剧集为单元故事，主线穿插其中，跳看影响不大但会损失铺垫。</li>
+            <li><b>版本差异</b>不同平台提供的配音与字幕版本可能不同，观看前可先确认。</li>
+          </ul>
+        </aside>
+      </div>
+      <div class="notice">
+        <b>提示：</b>本页为作品资料整理，不提供任何影视资源的下载或在线播放链接。观看请选择正规、合法的授权平台。
+      </div>
+    </div>
+  </section>
+
+  <!-- 主要角色 -->
+  <section class="block alt" id="crew">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>主要角色与人物关系</h2>
+        <p>人物是这部作品的骨架，理解他们更容易理解剧情的选择</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <span class="role">主角</span>
+          <h3>日比野未来 / 梦比优斯奥特曼</h3>
+          <p>来自光之国的年轻战士，以人类身份加入 CREW GUYS。性格真诚、认真，初期对人类社会充满好奇与不解，
+            在战斗与日常中逐步建立对伙伴的信任，完成自我成长。</p>
+        </article>
+        <article class="card">
+          <span class="role">队长</span>
+          <h3>迫水真吾</h3>
+          <p>CREW GUYS 的队长，沉稳可靠，是队伍的决策核心。他对未来抱有信任，也在关键时刻承担起指挥责任，
+            是团队凝聚力的重要来源。</p>
+        </article>
+        <article class="card">
+          <span class="role">队员</span>
+          <h3>相原龙</h3>
+          <p>性格直率、行动力强的队员，与未来之间既有摩擦也有默契。他的热血与坚持，代表了一线战斗人员的真实状态。</p>
+        </article>
+        <article class="card">
+          <span class="role">队员</span>
+          <h3>天谷木之美</h3>
+          <p>队伍中的技术型成员，负责情报分析与设备支持。冷静细致的作风，为前线行动提供了重要保障。</p>
+        </article>
+        <article class="card">
+          <span class="role">队员</span>
+          <h3>久世哲平</h3>
+          <p>负责医疗与救护相关工作，性格温和。他在战斗中关注队员的身体状况，体现了防卫队作为团队的另一面。</p>
+        </article>
+        <article class="card">
+          <span class="role">队员</span>
+          <h3>风见真理</h3>
+          <p>队伍中的女性队员，负责通讯与协调，反应迅速。她在紧张战局中的稳定表现，是团队运转不可缺少的一环。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 形态能力 -->
+  <section class="block" id="forms">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>形态与战斗特点</h2>
+        <p>梦比优斯的战斗方式随剧情推进不断变化，这也是作品看点之一</p>
+      </div>
+      <div class="forms">
+        <div class="form-item">
+          <div class="badge">基</div>
+          <h3>基础形态</h3>
+          <p>以红色与银色为主的基础姿态，是梦比优斯最常出现的形态。战斗风格偏向近身格斗配合光线技能，
+            强调速度与判断力，而非单纯的压倒性力量。</p>
+        </div>
+        <div class="form-item">
+          <div class="badge">强</div>
+          <h3>强化形态</h3>
+          <p>在特定条件下获得更强力量的形态，外观与能力均有明显变化。强化形态通常出现在剧情的关键节点，
+            对应主角在心理与信念上的突破。</p>
+        </div>
+        <div class="form-item">
+          <div class="badge">羁</div>
+          <h3>羁绊之力</h3>
+          <p>作品反复强调“不是一个人战斗”。与伙伴的信任关系会在战斗中转化为实际力量，
+            这种设定让战斗结果与人物关系紧密绑定，而不只是数值比拼。</p>
+        </div>
+        <div class="form-item">
+          <div class="badge">技</div>
+          <h3>代表性技能</h3>
+          <p>包括光线类必杀与多种辅助技能。不同技能的使用时机，往往对应战局的变化，
+            观察技能选择也是理解战斗逻辑的一种方式。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 观看指南 -->
+  <section class="block alt" id="guide">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>国语版本观看指南</h2>
+        <p>想顺畅看完这部作品，可以从这几个方面做准备</p>
+      </div>
+      <div class="guide-list">
+        <div class="guide-item">
+          <div class="num">1</div>
+          <div>
+            <h3>先确认版本来源</h3>
+            <p>不同平台提供的《梦比优斯奥特曼》在配音、字幕、画质上可能存在差异。观看前先确认是否为国语配音版本，
+              以及是否包含完整的剧集内容，避免中途因版本问题影响观看体验。</p>
+          </div>
+        </div>
+        <div class="guide-item">
+          <div class="num">2</div>
+          <div>
+            <h3>按播出顺序观看更连贯</h3>
+            <p>作品既有单元剧也有贯穿主线，按播出顺序观看能更好地感受主角的成长节奏。
+              如果时间有限，也可以先看与主线关联较强的剧集，再回头补完单元故事。</p>
+          </div>
+        </div>
+        <div class="guide-item">
+          <div class="num">3</div>
+          <div>
+            <h3>留意与前作的呼应</h3>
+            <p>作品与奥特兄弟世界观存在联系，部分角色和设定来自更早的作品。即使没看过前作也能理解主线，
+              但了解背景后，很多情节的分量会更明显。</p>
+          </div>
+        </div>
+        <div class="guide-item">
+          <div class="num">4</div>
+          <div>
+            <h3>关注人物关系而非只看打斗</h3>
+            <p>这部作品的动作场面固然是看点，但真正支撑剧情的是队员之间的相处与信任建立。
+              把注意力放在人物互动上，会更容易理解主角每次选择背后的动机。</p>
+          </div>
+        </div>
+        <div class="guide-item">
+          <div class="num">5</div>
+          <div>
+            <h3>选择合适的环境与设备</h3>
+            <p>特摄作品的音效与配乐是观感的重要部分，使用音质较好的设备、在相对安静的环境中观看，
+              能更完整地感受到战斗场面的张力与情绪段落的分量。</p>
+          </div>
+        </div>
+        <div class="guide-item">
+          <div class="num">6</div>
+          <div>
+            <h3>与家人一起观看的注意点</h3>
+            <p>国语配音降低了理解门槛，适合家庭观看。部分战斗场面节奏紧张，
+              与年龄较小的观众一起观看时，可以适当解释剧情，帮助他们理解故事在讲什么。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="block" id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>常见问题</h2>
+        <p>关于梦比优斯奥特曼国语，观众常问的几个问题</p>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>梦比优斯奥特曼国语和日语原版有区别吗？</summary>
+          <p>主要区别在于配音语言。国语版本通过中文配音呈现对白，方便不习惯阅读字幕的观众；
+            日语原版则保留了原始配音与语气表达。剧情内容本身通常一致，具体差异取决于平台的版本处理方式。</p>
+        </details>
+        <details>
+          <summary>没看过其他奥特曼作品，能直接看这部吗？</summary>
+          <p>可以。作品的主线围绕梦比优斯自身的成长与 CREW GUYS 的团队关系展开，不依赖前作也能理解。
+            不过其中一些角色和设定与早期作品相关，了解背景后会获得更多观感层次。</p>
+        </details>
+        <details>
+          <summary>这部作品适合什么年龄段的观众？</summary>
+          <p>作为特摄系列作品，主要面向青少年及成年观众，也适合家庭一起观看。
+            作品强调责任、伙伴与守护等主题，对年龄较小的观众，家长可以适当陪同并解释剧情。</p>
+        </details>
+        <details>
+          <summary>观看时需要注意剧集顺序吗？</summary>
+          <p>建议按播出顺序观看，这样能完整感受主角从稚嫩到成熟的变化过程。
+            如果只想了解主线，可以优先观看与核心剧情相关的剧集，但可能会错过一些人物关系的铺垫。</p>
+        </details>
+        <details>
+          <summary>在哪里可以看到国语版本？</summary>
+          <p>不同地区的授权平台可能不同，建议通过正规、合法的视频平台查询是否提供该作品的国语版本。
+            本页不提供播放或下载链接，仅作资料整理与观看建议。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h3>关于本页</h3>
+        <p>本页为《梦比优斯奥特曼》相关资料与观看指南的整理页面，内容基于公开作品信息，
+          用于帮助观众了解作品背景、角色与观看方式，不提供任何影视资源的播放或下载。</p>
+      </div>
+      <div>
+        <h3>页面导航</h3>
+        <ul>
+          <li><a href="#intro">作品简介</a></li>
+          <li><a href="#crew">主要角色</a></li>
+          <li><a href="#forms">形态能力</a></li>
+          <li><a href="#guide">观看指南</a></li>
+          <li><a href="#faq">常见问题</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>观看建议</h3>
+        <ul>
+          <li>优先选择正规授权平台</li>
+          <li>确认配音版本与剧集完整性</li>
+          <li>按播出顺序观看更连贯</li>
+          <li>家庭观看可适当陪同讲解</li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      本站为内容资料整理页面，与作品版权方无隶属关系。相关作品名称与角色版权归各自权利人所有。
+    </div>
+  </div>
+</footer>
+
+</body>
+  </html>
