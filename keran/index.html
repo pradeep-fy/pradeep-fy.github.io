@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>轲然-人物资料、作品介绍与相关信息整理</title>
+<meta name="description" content="轲然人物资料页面，整理轲然的基本信息、相关作品、经历脉络、常见问题与资料查找方式，帮助读者快速了解轲然相关公开信息。">
+<meta name="keywords" content="轲然,轲然资料,轲然作品,轲然介绍,轲然相关信息">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+:root{
+  --ink:#1f2430;
+  --ink-soft:#4a5265;
+  --line:#e3e6ee;
+  --paper:#ffffff;
+  --bg:#f5f6fa;
+  --brand:#3d5a80;
+  --brand-soft:#e8eef7;
+  --accent:#c9a227;
+  --radius:14px;
+  --shadow:0 6px 24px rgba(31,36,48,.07);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.75;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+
+/* 顶部 */
+.site-header{
+  background:var(--paper);
+  border-bottom:1px solid var(--line);
+  position:sticky;
+  top:0;
+  z-index:50;
+}
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  height:66px;
+}
+.brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:20px;
+  font-weight:700;
+  color:var(--ink);
+  letter-spacing:1px;
+}
+.brand:hover{text-decoration:none}
+.brand-mark{
+  width:34px;height:34px;border-radius:9px;
+  background:linear-gradient(135deg,var(--brand),#6c8bb5);
+  color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  font-size:16px;font-weight:700;
+}
+.brand-sub{
+  font-size:12px;color:var(--ink-soft);font-weight:400;
+  letter-spacing:0;display:block;line-height:1.2;
+}
+.main-nav{display:flex;gap:26px;font-size:15px}
+.main-nav a{color:var(--ink-soft);padding:4px 0;border-bottom:2px solid transparent}
+.main-nav a:hover,.main-nav a.active{color:var(--brand);border-bottom-color:var(--brand);text-decoration:none}
+.nav-toggle{
+  display:none;background:none;border:1px solid var(--line);
+  border-radius:8px;padding:6px 10px;font-size:15px;color:var(--ink-soft);cursor:pointer;
+}
+
+/* 首屏 */
+.hero{
+  background:linear-gradient(160deg,#eef2f9 0%,#f7f8fb 60%,#ffffff 100%);
+  border-bottom:1px solid var(--line);
+  padding:56px 0 48px;
+}
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.5fr 1fr;
+  gap:40px;
+  align-items:center;
+}
+.hero h1{
+  font-size:36px;
+  line-height:1.35;
+  letter-spacing:1px;
+  margin-bottom:16px;
+}
+.hero h1 .hl{color:var(--brand)}
+.hero p.lead{
+  font-size:16.5px;
+  color:var(--ink-soft);
+  margin-bottom:22px;
+  max-width:640px;
+}
+.hero-tags{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:26px}
+.tag{
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:999px;
+  padding:5px 14px;
+  font-size:13.5px;
+  color:var(--ink-soft);
+}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+.btn{
+  display:inline-block;
+  padding:11px 24px;
+  border-radius:10px;
+  font-size:15px;
+  font-weight:600;
+  transition:.2s;
+}
+.btn-primary{background:var(--brand);color:#fff}
+.btn-primary:hover{background:#33507a;text-decoration:none}
+.btn-ghost{background:var(--paper);color:var(--brand);border:1px solid var(--brand)}
+.btn-ghost:hover{background:var(--brand-soft);text-decoration:none}
+.hero-card{
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  padding:24px;
+}
+.hero-card h3{
+  font-size:16px;margin-bottom:14px;padding-bottom:10px;
+  border-bottom:1px solid var(--line);color:var(--ink);
+}
+.hero-card dl{display:grid;grid-template-columns:auto 1fr;gap:8px 14px;font-size:14.5px}
+.hero-card dt{color:var(--ink-soft);white-space:nowrap}
+.hero-card dd{color:var(--ink)}
+
+/* 通用区块 */
+.section{padding:52px 0}
+.section-head{margin-bottom:28px}
+.section-head h2{
+  font-size:24px;
+  letter-spacing:.5px;
+  margin-bottom:8px;
+  position:relative;
+  padding-left:14px;
+}
+.section-head h2::before{
+  content:"";position:absolute;left:0;top:6px;bottom:6px;
+  width:4px;border-radius:2px;background:var(--brand);
+}
+.section-head p{color:var(--ink-soft);font-size:15px;max-width:760px}
+
+/* 概览卡片 */
+.overview-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+.ov-card{
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:24px;
+  box-shadow:var(--shadow);
+}
+.ov-card h3{font-size:17px;margin-bottom:10px;color:var(--brand)}
+.ov-card p{font-size:14.5px;color:var(--ink-soft)}
+
+/* 信息脉络 */
+.timeline{
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:8px 28px;
+  box-shadow:var(--shadow);
+}
+.tl-item{
+  display:grid;
+  grid-template-columns:150px 1fr;
+  gap:24px;
+  padding:22px 0;
+  border-bottom:1px dashed var(--line);
+}
+.tl-item:last-child{border-bottom:none}
+.tl-label{
+  font-weight:700;color:var(--brand);font-size:15px;
+  padding-top:2px;
+}
+.tl-body h3{font-size:16px;margin-bottom:8px}
+.tl-body p{font-size:14.5px;color:var(--ink-soft)}
+
+/* 作品/内容列表 */
+.work-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:20px;
+}
+.work-item{
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-left:4px solid var(--accent);
+  border-radius:10px;
+  padding:20px 22px;
+  box-shadow:var(--shadow);
+}
+.work-item h3{font-size:16.5px;margin-bottom:8px}
+.work-item p{font-size:14.5px;color:var(--ink-soft)}
+.work-meta{
+  margin-top:12px;font-size:13px;color:var(--ink-soft);
+  display:flex;flex-wrap:wrap;gap:8px;
+}
+.work-meta span{
+  background:var(--brand-soft);color:var(--brand);
+  border-radius:6px;padding:2px 9px;
+}
+
+/* 资料查找指南 */
+.guide-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+.guide-card{
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:24px;
+}
+.guide-card .num{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:30px;height:30px;border-radius:50%;
+  background:var(--brand);color:#fff;font-size:14px;font-weight:700;
+  margin-bottom:12px;
+}
+.guide-card h3{font-size:16px;margin-bottom:8px}
+.guide-card p{font-size:14.5px;color:var(--ink-soft)}
+
+/* 侧栏布局：注意事项 */
+.notice-layout{
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  gap:32px;
+  align-items:start;
+}
+.notice-list{
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:28px;
+  box-shadow:var(--shadow);
+}
+.notice-list ul{list-style:none}
+.notice-list li{
+  position:relative;
+  padding:12px 0 12px 26px;
+  font-size:15px;
+  color:var(--ink-soft);
+  border-bottom:1px dashed var(--line);
+}
+.notice-list li:last-child{border-bottom:none}
+.notice-list li::before{
+  content:"";position:absolute;left:4px;top:21px;
+  width:8px;height:8px;border-radius:50%;background:var(--accent);
+}
+.aside-box{
+  background:var(--brand-soft);
+  border:1px solid #d6e2f2;
+  border-radius:var(--radius);
+  padding:24px;
+}
+.aside-box h3{font-size:16px;margin-bottom:12px;color:var(--brand)}
+.aside-box p{font-size:14.5px;color:var(--ink-soft);margin-bottom:10px}
+.aside-box p:last-child{margin-bottom:0}
+
+/* FAQ */
+.faq-list{display:grid;gap:14px}
+.faq-item{
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:10px;
+  overflow:hidden;
+}
+.faq-item summary{
+  cursor:pointer;
+  padding:18px 22px;
+  font-size:15.5px;
+  font-weight:600;
+  list-style:none;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:16px;
+}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{
+  content:"+";
+  font-size:20px;
+  color:var(--brand);
+  flex-shrink:0;
+  transition:.2s;
+}
+.faq-item[open] summary::after{content:"−"}
+.faq-item .faq-body{
+  padding:0 22px 20px;
+  font-size:14.5px;
+  color:var(--ink-soft);
+  border-top:1px solid var(--line);
+  padding-top:16px;
+}
+
+/* 页脚 */
+.site-footer{
+  background:#22293a;
+  color:#c3c9d6;
+  padding:44px 0 26px;
+  margin-top:20px;
+}
+.footer-grid{
+  display:grid;
+  grid-template-columns:1.6fr 1fr 1fr;
+  gap:36px;
+  margin-bottom:30px;
+}
+.site-footer h4{
+  color:#fff;font-size:15px;margin-bottom:14px;letter-spacing:.5px;
+}
+.site-footer p{font-size:14px;line-height:1.8;color:#a9b1c2}
+.site-footer ul{list-style:none}
+.site-footer li{margin-bottom:9px;font-size:14px}
+.site-footer a{color:#c3c9d6}
+.site-footer a:hover{color:#fff;text-decoration:none}
+.footer-bottom{
+  border-top:1px solid #333c50;
+  padding-top:20px;
+  font-size:13px;
+  color:#8b93a6;
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+/* 响应式 */
+@media (max-width:960px){
+  .hero-grid{grid-template-columns:1fr;gap:28px}
+  .overview-grid,.guide-grid{grid-template-columns:repeat(2,1fr)}
+  .notice-layout{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:720px){
+  .main-nav{
+    display:none;
+    position:absolute;
+    top:66px;left:0;right:0;
+    background:var(--paper);
+    border-bottom:1px solid var(--line);
+    flex-direction:column;
+    gap:0;
+    padding:8px 20px 16px;
+    box-shadow:0 10px 20px rgba(31,36,48,.08);
+  }
+  .main-nav.open{display:flex}
+  .main-nav a{padding:11px 0;border-bottom:1px solid var(--line)}
+  .main-nav a:last-child{border-bottom:none}
+  .nav-toggle{display:block}
+  .hero{padding:38px 0 34px}
+  .hero h1{font-size:27px}
+  .section{padding:38px 0}
+  .overview-grid,.work-grid,.guide-grid,.footer-grid{grid-template-columns:1fr}
+  .tl-item{grid-template-columns:1fr;gap:6px}
+  .tl-label{padding-top:0}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark">轲</span>
+      <span>轲然资料页
+        <span class="brand-sub">人物信息与作品整理</span>
+      </span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="展开导航">菜单</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#overview" class="active">概览</a>
+      <a href="#context">脉络</a>
+      <a href="#works">作品</a>
+      <a href="#guide">查找指南</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- 首屏 -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>关于 <span class="hl">轲然</span> 的公开资料与信息整理</h1>
+        <p class="lead">
+          轲然是一个在中文网络中常被检索的名字。本页围绕这一关键词，整理可公开查证的基本信息、相关作品与内容脉络、资料查找方式以及常见疑问，
+          方便初次接触的读者快速建立整体认识，也便于后续按线索继续核对。
+        </p>
+        <div class="hero-tags">
+          <span class="tag">人物资料</span>
+          <span class="tag">作品线索</span>
+          <span class="tag">信息核对</span>
+          <span class="tag">常见问题</span>
+        </div>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#overview">查看概览</a>
+          <a class="btn btn-ghost" href="#guide">如何查找资料</a>
+        </div>
+      </div>
+
+      <aside class="hero-card">
+        <h3>关键词速览</h3>
+        <dl>
+          <dt>关键词</dt><dd>轲然</dd>
+          <dt>页面性质</dt><dd>人物资料整理页</dd>
+          <dt>内容来源</dt><dd>公开可检索信息</dd>
+          <dt>适用人群</dt><dd>初次了解、资料核对</dd>
+          <dt>更新方式</dt><dd>随公开信息补充</dd>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 概览 -->
+  <section class="section" id="overview">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>轲然是谁：先弄清搜索意图</h2>
+        <p>搜索“轲然”的人，目的大多集中在三类：想确认这个名字指代的对象、想找到与其相关的作品或内容、想核对某条具体信息是否可靠。以下从这三个方向展开。</p>
+      </div>
+
+      <div class="overview-grid">
+        <article class="ov-card">
+          <h3>名字与指代</h3>
+          <p>
+            “轲然”由“轲”与“然”组成，字形上带有古典气质，在网络环境中可能作为个人昵称、作者署名、角色名或账号名称出现。
+            由于同名情况并不罕见，检索时建议结合具体平台、作品名或领域限定词一起使用，避免把不同对象的信息混在一起。
+          </p>
+        </article>
+        <article class="ov-card">
+          <h3>常见检索场景</h3>
+          <p>
+            常见的检索场景包括：在阅读平台看到署名后想了解作者背景、在社交平台遇到同名账号想确认身份、
+            在讨论中听到这个名字想补全上下文。不同场景下，需要核对的信息侧重点并不相同。
+          </p>
+        </article>
+        <article class="ov-card">
+          <h3>信息判断原则</h3>
+          <p>
+            人物类关键词的信息真假混杂，建议优先参考可追溯来源的内容，对缺少出处、时间、平台信息的说法保持谨慎，
+            尤其是涉及个人经历、身份、关系的描述，不宜仅凭单一转述下结论。
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 脉络 -->
+  <section class="section" id="context">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>理解“轲然”相关信息的几个维度</h2>
+        <p>与其罗列无法核实的细节，不如先给出一个可操作的观察框架，帮助读者自行判断和补充信息。</p>
+      </div>
+
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-label">维度一 · 出处</div>
+          <div class="tl-body">
+            <h3>这个名字最初出现在哪里</h3>
+            <p>
+              确认出处是理解任何人物关键词的第一步。它可能来自一部作品的署名、一个平台的账号、一段讨论中的提及，
+              也可能来自某个特定圈层的习惯称呼。出处不同，后续需要查找的方向也完全不同。
+            </p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-label">维度二 · 领域</div>
+          <div class="tl-body">
+            <h3>它属于哪个内容领域</h3>
+            <p>
+              同一名字在文学、绘画、音乐、游戏、短视频等不同领域都可能出现。先锁定领域，再在该领域内检索，
+              通常比直接泛搜更容易得到有效结果，也能减少同名干扰。
+            </p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-label">维度三 · 时间</div>
+          <div class="tl-body">
+            <h3>信息的时间范围</h3>
+            <p>
+              网络内容更新频繁，早期信息可能已经过时或被修正。记录信息出现的大致时间，有助于判断其是否仍然适用，
+              也便于在出现矛盾说法时理清先后顺序。
+            </p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-label">维度四 · 一致性</div>
+          <div class="tl-body">
+            <h3>多渠道交叉比对</h3>
+            <p>
+              当多个独立来源对同一描述给出相近表述时，可信度通常更高；若各来源说法差异明显，
+              则说明该信息尚不确定，更适合作为线索而非结论。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 作品 -->
+  <section class="section" id="works">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>与“轲然”相关的内容类型</h2>
+        <p>以下按内容形态分类说明，便于读者对照自己遇到的具体情况。具体作品与归属需以对应平台的原始信息为准。</p>
+      </div>
+
+      <div class="work-grid">
+        <article class="work-item">
+          <h3>文字类内容</h3>
+          <p>
+            小说、散文、评论、专栏等文字作品中，署名“轲然”的情况可能出现在网络阅读平台、个人博客或投稿栏目。
+            查找时建议记录作品名、发布平台与发布时间的组合，三者齐全时定位准确度会明显提高。
+          </p>
+          <div class="work-meta">
+            <span>署名</span><span>平台</span><span>发布时间</span>
+          </div>
+        </article>
+
+        <article class="work-item">
+          <h3>视觉与设计类内容</h3>
+          <p>
+            插画、平面设计、摄影等视觉内容中，创作者常以昵称署名。此类内容通常集中在作品展示平台，
+            可通过图片反向查找或平台内搜索昵称的方式进一步确认。
+          </p>
+          <div class="work-meta">
+            <span>昵称署名</span><span>作品展示</span>
+          </div>
+        </article>
+
+        <article class="work-item">
+          <h3>音视频与直播内容</h3>
+          <p>
+            在音频、短视频或直播平台中，昵称重复度较高，建议结合头像、简介、内容风格等辅助特征判断是否为同一对象，
+            避免仅凭名称相同就认定为同一人。
+          </p>
+          <div class="work-meta">
+            <span>账号昵称</span><span>内容风格</span>
+          </div>
+        </article>
+
+        <article class="work-item">
+          <h3>角色与虚构设定</h3>
+          <p>
+            部分情况下，“轲然”可能是某部作品中的角色名或设定名称。此时应回到作品本身查找，
+            关注作品的世界观、登场章节与相关人物关系，而不是按现实人物线索检索。
+          </p>
+          <div class="work-meta">
+            <span>角色名</span><span>作品设定</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 查找指南 -->
+  <section class="section" id="guide">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>如何更高效地查找“轲然”相关资料</h2>
+        <p>掌握几个简单方法，可以明显减少无关结果，提高信息核对效率。</p>
+      </div>
+
+      <div class="guide-grid">
+        <article class="guide-card">
+          <span class="num">1</span>
+          <h3>加上限定词</h3>
+          <p>
+            在关键词后补充领域、平台或作品名称，例如与阅读、绘画、账号等词组合，
+            用限定条件缩小范围，比单独搜索名字更有效。
+          </p>
+        </article>
+        <article class="guide-card">
+          <span class="num">2</span>
+          <h3>使用精确匹配</h3>
+          <p>
+            给关键词加上引号进行精确匹配，可以过滤掉只包含单个字的无关结果，
+            在名称较短或容易拆分时尤其有用。
+          </p>
+        </article>
+        <article class="guide-card">
+          <span class="num">3</span>
+          <h3>回到原始页面</h3>
+          <p>
+            二手转述容易失真。找到提及该名字的原始页面，直接查看上下文，
+            通常能获得比摘要更完整、更准确的信息。
+          </p>
+        </article>
+        <article class="guide-card">
+          <span class="num">4</span>
+          <h3>记录检索过程</h3>
+          <p>
+            把查到的平台、时间、链接简单记录下来，既方便后续复查，
+            也能在信息出现矛盾时快速回溯来源。
+          </p>
+        </article>
+        <article class="guide-card">
+          <span class="num">5</span>
+          <h3>区分同名对象</h3>
+          <p>
+            遇到多个同名结果时，先按领域和时间分组，再逐一确认，
+            不要急于把不同来源的信息合并成同一个人。
+          </p>
+        </article>
+        <article class="guide-card">
+          <span class="num">6</span>
+          <h3>保留不确定性</h3>
+          <p>
+            对无法核实的说法，如实标注“待确认”，比强行给出结论更负责任，
+            也方便他人补充更正。
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 注意事项 -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>浏览与核对信息时的注意事项</h2>
+        <p>人物类信息涉及个人，浏览和转述时都应保持基本的谨慎与尊重。</p>
+      </div>
+
+      <div class="notice-layout">
+        <div class="notice-list">
+          <ul>
+            <li>对涉及个人身份、住址、联系方式等隐私内容，不应主动收集或传播。</li>
+            <li>缺少明确出处的说法，建议只作为线索记录，不作为事实引用。</li>
+            <li>注意区分公开作品信息与私人生活信息，前者更适合讨论与引用。</li>
+            <li>同一昵称在不同平台可能属于不同使用者，判断时需结合多项特征。</li>
+            <li>信息若存在明显时间差，应优先参考较新的、来源更明确的版本。</li>
+            <li>在讨论中使用他人内容时，注意注明来源，尊重创作者权益。</li>
+          </ul>
+        </div>
+
+        <aside class="aside-box">
+          <h3>小提示</h3>
+          <p>如果你手头有一条关于“轲然”的信息，可以先问自己三个问题：它来自哪里？什么时候出现？有没有第二个独立来源？</p>
+          <p>这三个问题能过滤掉相当一部分不准确的内容。</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>常见问题</h2>
+        <p>整理读者在检索“轲然”时较常提出的疑问。</p>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary>“轲然”通常指什么？</summary>
+          <div class="faq-body">
+            它可能作为个人昵称、作者署名、账号名称或作品角色名出现，具体指代需要结合出现的平台和语境判断。
+            单独看这两个字，无法确定唯一对象。
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>为什么搜索到的结果看起来互不相关？</summary>
+          <div class="faq-body">
+            名称较短时，同名概率较高，不同领域、不同平台的用户可能使用相同或相近的昵称。
+            建议补充领域、平台或作品名等限定词，把结果范围收窄后再逐一核对。
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>怎样判断某条信息是否可靠？</summary>
+          <div class="faq-body">
+            可以从三点入手：是否有明确出处、是否标注了时间、是否能被第二个独立来源印证。
+            三点都满足时可信度较高；缺少其中任意一点，都建议保留判断。
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>本页会持续更新吗？</summary>
+          <div class="faq-body">
+            本页以整理检索思路和通用方法为主，内容会随公开信息的补充而调整。
+            对于无法核实的具体细节，本页选择不写入，以免造成误导。
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>可以在这里提交补充信息吗？</summary>
+          <div class="faq-body">
+            建议通过原始发布平台进行更正或补充，那里更接近信息源头，也更容易被其他读者看到。
+            涉及个人隐私的内容，不建议公开提交。
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>关于本页</h4>
+        <p>
+          本页围绕关键词“轲然”整理公开可检索的信息框架、检索方法与常见问题，
+          以帮助读者更清晰地判断和核对资料。页面内容不针对特定个人作出评价。
+        </p>
+      </div>
+      <div>
+        <h4>页面导航</h4>
+        <ul>
+          <li><a href="#overview">关键词概览</a></li>
+          <li><a href="#context">信息维度</a></li>
+          <li><a href="#works">内容类型</a></li>
+          <li><a href="#guide">查找指南</a></li>
+          <li><a href="#faq">常见问题</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>相关提示</h4>
+        <ul>
+          <li>优先参考原始来源</li>
+          <li>注意同名区分</li>
+          <li>尊重个人隐私</li>
+          <li>保留信息不确定性</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>轲然资料整理页 · 内容以公开信息为基础</span>
+      <span>如遇信息差异，请以原始来源为准</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var toggle = document.getElementById('navToggle');
+  var nav = document.getElementById('mainNav');
+  if(toggle && nav){
+    toggle.addEventListener('click', function(){
+      nav.classList.toggle('open');
+    });
+    nav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A'){
+        nav.classList.remove('open');
+      }
+    });
+  }
+
+  var links = document.querySelectorAll('.main-nav a');
+  links.forEach(function(link){
+    link.addEventListener('click', function(){
+      links.forEach(function(l){ l.classList.remove('active'); });
+      link.classList.add('active');
+    });
+  });
+})();
+</script>
+
+</body>
+  </html>
